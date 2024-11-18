@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "LucidaConsole";
+  src: url("/assets/fonts/fonts/LucidaConsole.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Monaco";
+  src: url("/assets/fonts/Monaco.ttf") format("woff2"),
+    url("/fonts/Monaco.ttf") format("ttf"),
+    url("/fonts/Monaco.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.terminal {
+  font-family: "Monaco", "LucidaConsole", monospace;
+  font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background-color: rgb(83, 84, 106);
+  border-radius: 10px 10px 5px 5px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
+    0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  width: inherit;
+  background-color: rgb(222 221 223);
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-button-red {
+  background-color: #f96256;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.header-button-yellow {
+  background-color: #fdbc3d;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.header-button-green {
+  background-color: #33c948;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.statement:first-child {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 0 0;
+}
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  margin: 0 35px 25px 35px;
+  gap: 5px;
+}
+
+.statement:last-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 35px 0;
+}
+
+.input-statement {
+  display: flex;
+  color: #f7f7f7;
+}
+
+.input-statement::before {
+  content: ">";
+  color: #f7f7f7;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.return-statement {
+  color: #e7d184;
+}
+
+.return-statement a {
+  color: #35feff;
+  text-decoration: none;
+}
+
+.return-statement a:hover {
+  color: #2fdbdb;
+  text-decoration: none;
+}
+
+.cursor {
+  display: inline-block;
+  width: 5px; /* Width of the mini block */
+  height: 15px; /* Height of the mini block */
+  background-color: #f7f7f7; /* Color of the block (like a cursor) */
+  margin-left: 5px; /* Space between the text and the block */
+  animation: blink 1s infinite;
+  position: relative; /* Ensures it stays in position */
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f7f7f7b3;
+  }
+}
