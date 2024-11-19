@@ -12,11 +12,11 @@
   font-family: Camphor, Open Sans, Segoe UI, sans-serif;
   text-align: right;
   padding-bottom: 50px;
-  color: #525f7f;
+  color: #747fe0;
 }
 
 .navbar {
-  color: #5a5d7a;
+  color: #747fe0;
   text-decoration: none;
   position: relative;
   font-weight: 300;
@@ -26,7 +26,7 @@ nav a {
   text-align: right;
     margin-left: 20px;
     text-decoration: none;
-    color: #4A4A4A;
+    color: #747fe0;
     font-size: 16px;
 }
   .navbar a::after {
@@ -46,7 +46,7 @@ nav a {
   }
 
   .navbar span {
-    color: #5a5d7a;
+    color: #747fe0;
     font-size: 20px;
     font-weight: 200;
   }
@@ -54,10 +54,10 @@ nav a {
 
 .hero-cursor {
   display: inline-block;
-  width: 5px; /* Width of the mini block */
-  height: 15px; /* Height of the mini block */
-  background-color: #12105b; /* Color of the block (like a cursor) */
-  margin-left: 5px; /* Space between the text and the block */
+  width: 12px; /* Width of the mini block */
+  height: 45px; /* Height of the mini block */
+  background-color: #747fe0; /* Color of the block (like a cursor) */
+  margin-left: 15px; /* Space between the text and the block */
   animation: blinky 1s infinite;
   position: relative; /* Ensures it stays in position */
 }
@@ -68,7 +68,7 @@ nav a {
     background-color: transparent;
   }
   50% {
-    background-color: #1836beb3;
+    background-color: #747fe0;
   }
 }
 
@@ -76,6 +76,11 @@ nav a {
   font-family: Monaco, Consolas, Lucida Console, monospace;
   font-size: 4.5em;
   color: #747fe0;
+}
+
+.hero-description {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 
