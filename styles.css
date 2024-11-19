@@ -279,6 +279,7 @@ p {
     color: #5a5d7a;
     text-decoration: none;
     position: relative;
+    font-weight: 300;
   }
 
   .contact-links a::after {
