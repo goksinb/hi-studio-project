@@ -14,6 +14,62 @@
   padding-bottom: 50px;
   color: #525f7f;
 }
+
+.navbar {
+  color: #5a5d7a;
+  text-decoration: none;
+  position: relative;
+  font-weight: 300;
+  }
+
+nav a {
+  text-align: right;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 16px;
+}
+  .navbar a::after {
+    content: ""; /* Empty content for the bar */
+    position: absolute;
+    left: 0;
+    top: 35px; /* Position it just below the text */
+    width: 0; /* Start with no width */
+
+    height: 8px; /* Thickness of the sliding bar */
+    background-color: #747fe0; /* Color of the sliding bar */
+    transition: width 0.3s ease-in-out; /* Smooth sliding effect */
+  }
+
+  .navbar a:hover::after {
+    width: 100%; /* Expand the bar to full width on hover */
+  }
+
+  .navbar span {
+    color: #5a5d7a;
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+.hero-cursor {
+  display: inline-block;
+  width: 5px; /* Width of the mini block */
+  height: 15px; /* Height of the mini block */
+  background-color: #12105b; /* Color of the block (like a cursor) */
+  margin-left: 5px; /* Space between the text and the block */
+  animation: blinky 1s infinite;
+  position: relative; /* Ensures it stays in position */
+}
+
+@keyframes blinky {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #1836beb3;
+  }
 }
 
 .hero-container .hero-title {
