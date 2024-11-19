@@ -118,6 +118,8 @@ h1 {
   ); /* makes the picture a little bit bigger in the button */
 }
 
+/* Goksin */
+
 @font-face {
   font-family: "LucidaConsole";
   src: url("/assets/fonts/fonts/LucidaConsole.ttf") format("truetype");
@@ -131,6 +133,7 @@ h1 {
 }
 
 body {
+  background-color: #f6f9fc;
   margin: 0;
   padding: 20px;
 }
@@ -269,12 +272,18 @@ p {
   .contact-title {
     color: #525f7f;
     font-family: Camphor, Open Sans, Segoe UI, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5em;
     text-align: center;
     padding-top: 50px;
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+  }
+
+  .dash {
+    width: 60px; /* Start with no width */
+    height: 8px; /* Thickness of the sliding bar */
+    background-color: #747fe0; /* Color of the sliding bar */
   }
 
   .contact-links {
@@ -296,6 +305,7 @@ p {
     color: #5a5d7a;
     text-decoration: none;
     position: relative;
+    font-weight: 300;
   }
 
   .contact-links a::after {
@@ -314,6 +324,12 @@ p {
     width: 100%; /* Expand the bar to full width on hover */
   }
 
+  .contact-links span {
+    color: #5a5d7a;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
   .footer {
     margin: 0 auto;
     font-size: 0.8em;
@@ -324,3 +340,5 @@ p {
     color: #525f7f;
   }
 }
+
+/* Goksin */
