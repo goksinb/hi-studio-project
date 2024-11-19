@@ -93,6 +93,8 @@ h1 {
   ); /* makes the picture a little bit bigger in the button */
 }
 
+/* Goksin */
+
 @font-face {
   font-family: "LucidaConsole";
   src: url("/assets/fonts/fonts/LucidaConsole.ttf") format("truetype");
@@ -106,6 +108,7 @@ h1 {
 }
 
 body {
+  background-color: #f6f9fc;
   margin: 0;
   padding: 20px;
 }
@@ -222,8 +225,6 @@ p {
   animation: blink 1s infinite;
   position: relative; /* Ensures it stays in position */
 }
-
-/* Goksin */
 
 @keyframes blink {
   0%,
