@@ -1,0 +1,324 @@
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  /* Container of all the projects */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Project images */
+  .project img {
+    max-width: 240px;
+    height: auto;
+  }
+  
+ /* Individual project cards */
+.project {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Light border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Open Sans", "Arial", sans-serif; /* Clean and modern font */
+    font-size: 16px; /* Ensure readability */
+    line-height: 1.5; /* Improve text spacing */
+    color: #333; /* Dark gray text */
+  }
+  
+  /* Hover effect for projects */
+  .project:hover {
+    transform: translateY(-5px); /* Slightly lift the project */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  }
+  
+  /* Information section about the projects */
+  .project .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Open Sans", "Arial", sans-serif; /* Apply font to project info */
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.6; /* Add spacing for better readability */
+    color: #333; /* Dark gray text */
+  }
+  
+  /* Skills section with HTML5, CSS3, etc. */
+  .project .project-skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-family: "Open Sans", "Arial", sans-serif; /* Consistent font style */
+  }
+  
+  
+  /* Skill badges */
+  .project-skill {
+    border-radius: 4px;
+    border: 2px solid #71eda3;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Project description */
+  .project-description {
+    font-size: 16px;
+  }
+  
+  /* Buttons container */
+  .project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Project buttons */
+  .project-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #747fe0; /* Soft blue */
+    transition: all 0.3s ease;
+  }
+  
+  .project-buttons .btn:hover {
+    transform: translateY(-3px);
+    background-color: #747fe0; /* Darker blue on hover */
+    color: #ffffff;
+  }
+  
+  /* Icons inside buttons */
+  .project-buttons .btn img.btn-icon {
+    width: 16px;
+    height: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .project-buttons .btn:hover img.btn-icon {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+  }
+  
+  @font-face {
+    font-family: "LucidaConsole";
+    src: url("/assets/fonts/fonts/LucidaConsole.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Monaco";
+    src: url("/assets/fonts/Monaco.ttf") format("woff2"),
+      url("/fonts/Monaco.ttf") format("ttf"),
+      url("/fonts/Monaco.ttf") format("truetype");
+  }
+  
+  body {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* About container */
+  .about-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  /* Terminal styles */
+  .terminal {
+    font-family: "Monaco", "LucidaConsole", monospace;
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    background-color: rgb(83, 84, 106);
+    border-radius: 10px 10px 5px 5px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
+      0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+  }
+  
+  .terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 28px;
+    background-color: rgb(222 221 223);
+    border: none;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .header-button-red {
+    background-color: #f96256;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  .header-button-yellow {
+    background-color: #fdbc3d;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  
+  .header-button-green {
+    background-color: #33c948;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  
+  .statement:first-child {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0 0 0;
+  }
+  
+  .statement {
+    display: flex;
+    flex-direction: column;
+    margin: 0 45px 25px 45px;
+    gap: 5px;
+  }
+  
+  .statement:last-child {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 35px 0;
+  }
+  
+  .input-statement {
+    display: flex;
+    color: #f7f7f7;
+  }
+  
+  .input-statement::before {
+    content: ">";
+    color: #f7f7f7;
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  .return-statement {
+    color: #e7d184;
+  }
+  
+  .return-statement a {
+    color: #35feff;
+    text-decoration: none;
+  }
+  
+  .return-statement a:hover {
+    color: #2fdbdb;
+    text-decoration: none;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    background-color: #f7f7f7;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+    position: relative;
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #f7f7f7b3;
+    }
+  }
+  
+  .footer-container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-title {
+    color: #525f7f;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  
+  .contact-links {
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 150px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-links a {
+    color: #5a5d7a;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .contact-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 0;
+    height: 8px;
+    background-color: #747fe0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .contact-links a:hover::after {
+    width: 100%;
+  }
+  
+  .footer {
+    margin: 0 auto;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #525f7f;
+  }
+  
